@@ -1,0 +1,381 @@
+
+
+/* ---------------------- */
+/* ---- BASIC SETUPS ---- */
+/* ---------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+h1,h2,p,h3{
+    font-style: normal;
+    font-weight: bold;
+    color: #34313D;
+}
+
+h1{
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    margin: 90px 0 5px 0;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+h3{
+    font-size: 22px;
+    line-height: 33px;
+    color: #34313D;
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+
+.par-15,
+.par-18,
+.par-22,
+.nav-link{
+    color: #9E9AA8;
+}
+
+.par-22{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    margin-bottom: 38px;
+}
+
+.par-18{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.122727px;
+    margin-bottom: 100px;
+    margin-top: 18px;
+}
+
+.par-15{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.btn{
+    display: inline-block;
+    background: #2BD0D0;
+    border-radius: 28px;
+    padding: 14px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #fff;
+    transition: background .3s ease;
+}
+
+.btn:hover{
+    background: #9AE3E3;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ---------------------- */
+/* ------- NAVBAR ------- */
+/* ---------------------- */
+
+nav{
+    padding: 48px 0;
+}
+
+nav .btn{
+    font-size: 15px;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-brand a{
+    display: block;
+    width: 120px;
+    height: 32px;
+    margin-right: 30px;
+    background-image: url(../img/logo.svg);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+
+.left-side,
+.right-side{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    transition: color .3s ease;
+}
+
+.nav-link:hover{
+    color: #34313D;
+}
+
+.right-side .btn{
+    margin-left: 17px;
+    padding: 9px 24px;
+}
+
+
+/* ---------------------- */
+/* ------- BANNER ------- */
+/* ---------------------- */
+
+.banner .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-section{
+    width: 563px;
+}
+
+.image-section{
+    width: 545px;
+    height: 482px;
+    position: relative;
+    right: -165px;
+    background-image: url(../img/hero-bg.svg);
+    background-position: bottom right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.input{
+    width: 1110px;
+    height: 168px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    bottom: -84px;
+    padding: 52px 65px;
+    background-color: #3A3054;
+    border-radius: 10px;
+    background-image: url(../img/Path1.svg), url(../img/Path2.svg);
+    background-position: bottom left, top right;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.input .btn{
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+input{
+    width: 77%;
+    display: inline-block;
+    padding: 14px 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    color: #34313D;
+    border-radius: 10px;
+    border: none;
+    margin-right: 30px;
+}
+
+
+/* ---------------------- */
+/* ------ CONTENT ------- */
+/* ---------------------- */
+
+.content{
+    background-color: #f2f2f2;
+    padding: 204px 0 120px 0;
+}
+
+.content .container{
+    display: flex;
+    height: 355px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
+}
+
+.line{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 8px;
+    background: #2BD0D0;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: -1;
+}
+
+.box{
+    width: 350px;
+    height: 267px;
+    background-color: #fff;
+    padding: 41px 32px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.box:nth-child(3){
+    position: relative;
+    top: 44px;
+}
+
+.box:nth-child(4){
+    position: relative;
+    top: 88px;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    top: -44px;
+    left: 32px;
+    width: 88px;
+    height: 88px;
+    background-color: #3A3054;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border-radius: 88px;
+}
+
+.box:nth-child(2)::before{
+    background-image: url(../img/brandrec.svg);
+}
+
+.box:nth-child(3)::before{
+    background-image: url(../img/accelerator.svg);
+}
+
+.box:last-child::before{
+    background-image: url(../img/custom.svg);
+}
+
+
+/* ---------------------- */
+/* ------- FOOTER ------- */
+/* ---------------------- */
+
+/* -------- TOP --------- */
+/* ---------------------- */
+
+.top{
+    padding: 57px;
+    text-align: center;
+    background-color: #3A3054;
+    background-image: url(../img/Path2.2.svg), url(../img/Path3.svg), url(../img/Path.svg);
+    background-position: right top, left top, left bottom;
+    background-repeat: no-repeat;
+}
+
+.top h2{
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+/* ------- BOTTOM ------- */
+/* ---------------------- */
+
+.bottom{
+    background: #232127;
+    padding: 70px 0;
+}
+
+.bottom .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom p{
+    color: #fff;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.block{
+    display: inline-block;
+}
+
+.block:first-child{
+    width: 120px;
+    height: 32px;
+    margin-right: 261px;
+    background-image: url(../img/Shortly.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.block:last-child ul{
+    display: flex;
+    align-items: center;
+}
+
+.block:last-child a{
+    font-size: 25px;
+    margin-left: 24px;
+}
+
+.block-link{
+    display: block;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.234375px;
+    color: #BFBFBF;
+    transition: color .3s ease;
+}
+
+.icon::before{
+    transition: color .3s ease;
+}
+
+.block-link:hover,
+.icon:hover::before{
+    color: #2BD0D0;
+}
