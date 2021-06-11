@@ -244,8 +244,6 @@ input{
     transform: translate(-50%, -50%);
     height: 8px;
     background: #2BD0D0;
-    margin-top: auto;
-    margin-bottom: auto;
     z-index: -1;
 }
 
@@ -272,14 +270,13 @@ input{
     content: '';
     position: absolute;
     top: -44px;
-    left: 32px;
     width: 88px;
     height: 88px;
     background-color: #3A3054;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
-    border-radius: 88px;
+    border-radius: 50%;
 }
 
 .box:nth-child(2)::before{
@@ -372,6 +369,11 @@ input{
 
 .icon::before{
     transition: color .3s ease;
+}
+
+.fa-instagram::before{
+    font-size: 30px;
+    color: #fff;
 }
 
 .block-link:hover,
